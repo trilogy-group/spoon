@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  builder:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: spoon:latest
+    container_name: spoon
+    volumes:
+      - ../.:/data:Z
+    command: bash
+    tty: true
