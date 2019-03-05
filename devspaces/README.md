@@ -67,7 +67,7 @@ mvn compile
 
 ```bash
 mvn test
-`
+```
 
 ### Docker Script Manager (CLI)
 
@@ -112,5 +112,6 @@ mvn compile
 
 ```bash
 mvn test
+```
 
 Please refer to [Spoon Readme](../../README.md) doc for more details on the building and testing the project.
