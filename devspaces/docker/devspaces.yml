@@ -1,0 +1,18 @@
+--- # devspaces.yml
+name: trilogy-spoon
+description: Development environment for Spoon Tool
+
+docker-file: Dockerfile
+
+docker-build-includes: |
+  **/*
+
+sync-ignore: |
+  .git
+  .idea
+  .DS_Store
+  .data
+  **/target
+  **/*.tmp
+  spooned
+  spooned-classes
