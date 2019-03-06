@@ -1,0 +1,12 @@
+version: '3.2'
+services:  
+  trilogy-spoon:
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    volumes:
+      - type: bind
+        source: ../../
+        target: /data
+    container_name: trilogy-spoon
+    network_mode: host
